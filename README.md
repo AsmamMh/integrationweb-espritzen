@@ -1,4 +1,4 @@
-"# Projet Int�gration Web" 
+"# Projet Integration Web" 
 ## 👥 Groupe
 Nom du groupe : StudyCare Team
 
@@ -6,8 +6,6 @@ Nom du groupe : StudyCare Team
 - Asma Mhamdi – Questionnaire / graphe de Suivi du stress/activites/suitequestionnaire
 - 
 - 
-
-### 📸 Captures d’écran de asma 
 
 
 ## 📱 Description du projet
