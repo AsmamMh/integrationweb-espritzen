@@ -7,7 +7,7 @@ Nom du groupe : StudyCare Team
 - 
 - 
 
-### 📸 Captures d’écran
+### 📸 Captures d’écran de asma 
 
 
 ## 📱 Description du projet
@@ -20,3 +20,6 @@ Elle permet de mesurer le niveau de stress, suivre son évolution et accéder à
 - TailwindCSS
 - JavaScript
 - Git & GitHub
+
+
+*lien figma : https://www.figma.com/design/CBOBOs9mFLvhWyvI6GbLk0/UI_Integration?node-id=123-223&t=wOQiIU1ozbGACsgp-1
