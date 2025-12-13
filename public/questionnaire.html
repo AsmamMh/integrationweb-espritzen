@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#F5F5E6] m-0 p-0">
+
+<div class="w-[1440px] h-[1024px] mx-auto flex flex-col">
+
+  <!-- HEADER -->
+  <header class="bg-[#E8F3EA] w-[1440px] h-[64px]">
+    <div class="h-full px-[72px] flex items-center">
+      <img src="../src/assets/logo.svg" class="h-[32px]" alt="logo">
+
+      <nav
+        class="flex items-center font-medium text-gray-700"
+        style="margin-left:242px; gap:105px; font-size:24px;"
+      >
+        <a href="index.html">Accueil</a>
+        <a href="activities.html">Activités</a>
+        <a href="profil.html">Profil</a>
+        <a href="#">Communauté</a>
+        <a href="#">Conseils</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU -->
+  <main class="flex-1 flex items-center justify-center">
+
+    <div class="question-card">
+
+      <h2 class="text-[24px] font-semibold">Questionnaire</h2>
+
+      <!-- PROGRESSION -->
+      <div class="flex items-center gap-4">
+        <span id="progress-text" class="text-[16px] font-medium">1 / 7</span>
+        <div class="progress-bar flex-1">
+          <span id="progress-bar" style="width:14%"></span>
+        </div>
+      </div>
+
+      <!-- QUESTIONS -->
+      <div class="space-y-16">
+
+        <div class="question-block" data-id="q1">
+          <p>À quelle fréquence te sens-tu dépassé(e) par ta charge de travail académique ?</p>
+          <button class="answer-btn">Jamais</button>
+          <button class="answer-btn">Parfois</button>
+          <button class="answer-btn">Toujours</button>
+        </div>
+
+        <div class="question-block" data-id="q2">
+          <p>Dans quelle mesure parviens-tu à gérer ton temps efficacement ?</p>
+          <button class="answer-btn">Mal</button>
+          <button class="answer-btn">Moyennement</button>
+          <button class="answer-btn">Bien</button>
+        </div>
+
+      </div>
+
+      <!-- MESSAGE ERREUR -->
+      <p id="errorMsg" class="text-red-600 text-[16px] text-right hidden">
+        ⚠️ Veuillez répondre aux deux questions avant de continuer
+      </p>
+
+      <!-- BOUTON -->
+      <div class="flex justify-end">
+        <button class="btn-next" id="nextBtn">
+          Suivant
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-[1440px] h-[120px] bg-[#E8F3EA]">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p>
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants.
+        </p>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input type="email" placeholder="enter your adress mail here"
+            class="flex-1 px-4 outline-none text-sm">
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const TOTAL = 7;
+  const nextBtn = document.getElementById("nextBtn");
+  const errorMsg = document.getElementById("errorMsg");
+  const progressText = document.getElementById("progress-text");
+  const progressBar = document.getElementById("progress-bar");
+
+  const answers = { q1: false, q2: false };
+
+  document.querySelectorAll(".question-block").forEach((block, index) => {
+    const id = block.dataset.id;
+    const buttons = block.querySelectorAll(".answer-btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        button.classList.add("active");
+
+        answers[id] = true;
+        errorMsg.classList.add("hidden");
+
+        progressText.textContent = `${index + 1} / ${TOTAL}`;
+        progressBar.style.width = `${((index + 1) / TOTAL) * 100}%`;
+      });
+    });
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (answers.q1 && answers.q2) {
+      window.location.href = "suitequestionnaire.html";
+    } else {
+      errorMsg.classList.remove("hidden");
+    }
+  });
+</script>
+
+</body>
+</html>
