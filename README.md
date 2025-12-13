@@ -9,7 +9,7 @@ Nom du groupe : StudyCare Team
 
 
 ## 📱 Description du projet
-StudyCare est une application web dédiée au bien-être des étudiants.
+EspritZen est une application web dédiée au bien-être des étudiants 3A locataires
 Elle permet de mesurer le niveau de stress, suivre son évolution et accéder à des activités de relaxation.
 
 ## 🛠️ Technologies utilisées
