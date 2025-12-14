@@ -6,7 +6,7 @@ Nom du groupe : StudyCare Team
 - Asma Mhamdi – Questionnaire / graphe de Suivi du stress/activites/suitequestionnaire/nosactivites
 - Araar Tasnim - PlayMusic/pomodoro / listeMusic 
 - Taieb amine Bel hadj ali - Activity / Track / Location / History
-
+- Mouadh Hamzaoui - Acceuil BienEtre / Games / ChatBot
 
 ## 📱 Description du projet
 EspritZen est une application web dédiée au bien-être des étudiants 3A locataires
