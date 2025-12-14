@@ -3,7 +3,7 @@
 Nom du groupe : StudyCare Team
 
 ## 👤 Membres
-- Asma Mhamdi – Questionnaire / graphe de Suivi du stress/activites/suitequestionnaire
+- Asma Mhamdi – Questionnaire / graphe de Suivi du stress/activites/suitequestionnaire/nosactivites
 - Araar Tasnim - PlayMusic/pomodoro / listeMusic 
 - Taieb amine Bel hadj ali - Activity / Track / Location / History
 
