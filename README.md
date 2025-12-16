@@ -1,5 +1,6 @@
 # Projet d’Intégration Web
  📌 Nom du groupe: groupe 1 4twin 5
+ 
  👥 Membres du groupe
 
 Membre 1 : mhamdi asma
@@ -9,6 +10,7 @@ Interface questionnaire
 Interface suite du questionnaire (résumé)
 Interface graphique de suivi de stress
 Interface activités recommandées
+
 Capture d’écran :
 
  <img width="1376" height="881" alt="activite recommande " src="https://github.com/user-attachments/assets/f87fd3e6-e423-4445-97b5-859ee6bb8dd1" />
