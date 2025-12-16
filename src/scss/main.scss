@@ -1,6 +1,9 @@
 @use "./variables";
 @use "./mixins";
 @use "./layouts";
+@use 'components/suivisante';
+@use 'components/journal';
+@use 'components/feedback';
 
 @use "./components/componentsquestionnaire";
 @use "./components/suiviequestionnaire";

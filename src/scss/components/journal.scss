@@ -1,0 +1,103 @@
+/* JOURNAL - MOOD TRACKER */
+
+.journal-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 48px 0;
+
+  .journal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .mood-selector {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .mood-label {
+        font-size: 18px;
+        font-weight: 500;
+        color: #666;
+      }
+
+      .mood-buttons {
+        display: flex;
+        gap: 12px;
+
+        .mood-btn {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: #E5E5E5;
+          }
+
+          &.active {
+            background-color: #E5E5E5;
+          }
+        }
+      }
+    }
+
+    .journal-date {
+      font-size: 18px;
+      font-weight: 500;
+      color: #666;
+    }
+  }
+
+  .journal-textarea {
+    background-color: #D4CDAF;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 32px;
+
+    textarea {
+      width: 100%;
+      height: 256px;
+      background: transparent;
+      border: none;
+      outline: none;
+      resize: none;
+      font-size: 16px;
+      color: #666;
+      font-family: inherit;
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+  }
+
+  .journal-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    .save-btn {
+      background-color: #B8D4A8;
+      color: #666;
+      padding: 12px 32px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #A8C498;
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi Santé - Esprit Zen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5E6] m-0 p-0">
+<!-- FRAME DESKTOP 1440 x 1024 -->
+<div class="w-[1440px] h-[1024px] mx-auto flex flex-col">
+  <!-- HEADER -->
+  <header class="bg-[#E8F3EA] w-[1440px] h-[64px]">
+    <div class="h-full px-[72px] flex items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-[32px] h-[32px] bg-teal-600 rounded flex items-center justify-center">
+          <span class="text-white text-xl">🏠</span>
+        </div>
+        <span class="text-sm font-medium text-gray-700">Esprit Zen</span>
+      </div>
+      <nav
+        class="flex items-center font-medium text-gray-700"
+        style="margin-left:242px; gap:105px; font-size:24px;"
+      >
+        <a href="suivi-sante.html" class="text-teal-700 font-semibold">Accueil</a>
+        <a href="journal.html" class="hover:text-teal-600">Activités</a>
+        <a href="#" class="hover:text-teal-600">Profil</a>
+        <a href="#" class="hover:text-teal-600">Communauté</a>
+        <a href="feedback.html" class="hover:text-teal-600">Conseils</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="flex-1 px-[72px] py-8">
+    <!-- TITRE -->
+    <h1 class="text-2xl font-medium text-gray-800 mb-6">Votre Santé Aujourd'hui</h1>
+
+    <!-- GRILLE DE CARTES -->
+    <div class="grid grid-cols-3 gap-6 mb-8">
+      <!-- CARTE BPM -->
+      <div class="bg-[#D4DDA6] rounded-lg p-6 flex items-center gap-4">
+        <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="text-gray-700 text-sm mb-1">Bpm</p>
+          <p class="text-3xl font-semibold text-gray-800">--</p>
+        </div>
+      </div>
+
+      <!-- CARTE PAS -->
+      <div class="bg-[#D4DDA6] rounded-lg p-6 flex items-center gap-4">
+        <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 7c0-1.1-.9-2-2-2h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-5v-3.1c1.63-.33 2.98-1.46 3.61-2.96C18.08 12.63 20 10.55 20 8V7zM6 8V7h3.76C9.66 7.39 9.75 7.86 9.95 8.22c-.98-.17-1.98-.6-2.59-1.32C6.84 7.4 6.42 7.78 6 8zm8 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm4-1v1c-.42-.22-.84-.6-1.36-1.1-.61.72-1.61 1.15-2.59 1.32.2-.36.29-.83.19-1.22H18z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-gray-700 text-sm mb-1">6841 pas</p>
+        </div>
+      </div>
+
+      <!-- CARTE EAU -->
+      <div class="bg-[#D4DDA6] rounded-lg p-6 flex items-center justify-center">
+        <p class="text-gray-700 text-lg">1.5L sur 2 L</p>
+      </div>
+
+      <!-- CARTE CALORIES -->
+      <div class="bg-[#D4DDA6] rounded-lg p-6 flex items-center gap-4">
+        <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-gray-700 text-sm mb-1">Kcal</p>
+          <p class="text-3xl font-semibold text-gray-800">--</p>
+        </div>
+      </div>
+
+      <!-- CARTE SOMMEIL -->
+      <div class="bg-[#D4DDA6] rounded-lg p-6 flex items-center gap-4">
+        <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-gray-700 text-sm mb-1">7h 30 mn</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOUTONS HISTORIQUE ET ACTIVITES -->
+    <div class="grid grid-cols-3 gap-6 mb-8">
+      <button class="bg-[#D4DDA6] rounded-lg p-6 text-gray-700 text-lg font-medium hover:bg-[#C4BDAF] transition">
+        Historique
+      </button>
+      <button class="bg-[#D4DDA6] rounded-lg p-6 text-gray-700 text-lg font-medium hover:bg-[#C4BDAF] transition">
+        Activités
+      </button>
+      <button class="bg-[#D4DDA6] rounded-lg p-6 text-gray-700 text-lg font-medium hover:bg-[#C4BDAF] transition">
+        Alimentation
+      </button>
+    </div>
+
+    <!-- BOUTON MODIFIER -->
+    <div class="flex justify-end">
+      <button class="bg-[#B0D193] hover:bg-[#A8C498] text-gray-700 px-8 py-2 rounded-lg font-medium transition">
+        Modifier
+      </button>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#E8F3EA] w-[1440px] h-[120px]">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p class="text-sm">
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants. Votre équilibre mental est notre priorité.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input
+            type="email"
+            placeholder="enter ton adresse mail ici"
+            class="flex-1 px-4 outline-none text-sm"
+          >
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
