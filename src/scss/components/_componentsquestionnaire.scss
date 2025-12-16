@@ -1,11 +1,15 @@
 @use "../variables";
 
 
-/* FRAME DESKTOP */
-body {
-  background-color: #F5F5E6; /* ✅ fond du frame */
-  margin: 0;
-  padding: 0;
+/* FRAME */
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* CARTE QUESTIONNAIRE */
