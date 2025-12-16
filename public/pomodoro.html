@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esprit Zen – Pomodoro</title>
+    <link rel="stylesheet" href="style.css"></head>
+
+<body>
+<div class="frame">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="Logo">
+                <span>Esprit Zen</span>
+            </div>
+
+            <nav class="nav">
+                <a class="active">Accueil</a>
+                <a>Activités</a>
+                <a>Profil</a>
+                <a>Communauté</a>
+                <a>Conseils</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- STATS (PLACÉES AU-DESSUS DU TIMER) -->
+        <section class="stats">
+            <div class="stat-card">
+                <p>Séances d’aujourd’hui</p>
+                <span>2</span>
+            </div>
+            <div class="stat-card">
+                <p>Temps de concentration total</p>
+                <span>0 min</span>
+            </div>
+            <div class="stat-card">
+                <p>Série actuelle</p>
+                <span>3 jours</span>
+            </div>
+        </section>
+
+        <!-- TIMER -->
+        <section class="timer-section">
+
+            <!-- OPTIONS -->
+            <div class="timer-options">
+                <button>Pause longue<br><small>15 min</small></button>
+                <button class="active">Durée<br><small>25 min</small></button>
+                <button>Pause courte<br><small>5 min</small></button>
+            </div>
+
+            <!-- CERCLE -->
+            <div class="timer-circle">
+                <div class="timer-inner">
+                    <span class="time">25:00</span>
+                    <p>Temps de mise au point</p>
+                </div>
+            </div>
+
+            <!-- CONTROLES -->
+            <div class="timer-controls">
+                <button class="play">▶</button>
+                <button class="reset">⟳</button>
+            </div>
+
+        </section>
+
+        <!-- BOTTOM -->
+        <section class="bottom-cards">
+
+            <div class="card">
+                <h3>Paramètres ⚙</h3>
+                <ul>
+                    <li>Auto-start breaks</li>
+                    <li>Auto-start sessions</li>
+                    <li>Notifications</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Progression du jour ↗</h3>
+                <ul>
+                    <li>Session 1</li>
+                    <li>Session 2</li>
+                    <li>Session 3</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Alarmes 🔔</h3>
+                <ul>
+                    <li>10:00 active</li>
+                    <li>13:00 active</li>
+                    <li>16:00 active</li>
+                    <button class="add">+</button>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>📍 Cité El Ghazela – 📞 +216 23 45 65 47 – ✉ EspritZen@gmail.com</p>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Graphe de suivi du stress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#F5F5E6] m-0 p-0">
+
+<!-- FRAME DESKTOP 1440 x 1024 -->
+<div class="w-[1440px] h-[1024px] mx-auto flex flex-col">
+
+  
+  <!-- HEADER -->
+  <header class="bg-[#E8F3EA] w-[1440px] h-[64px]">
+    <div class="h-full px-[72px] flex items-center">
+      <img src="../src/assets/logoespritzen.png" class="h-[32px]" alt="logo">
+
+      <nav
+        class="flex items-center font-medium text-gray-700"
+        style="margin-left:242px; gap:105px; font-size:24px;"
+      >
+        <a href="index.html">Accueil</a>
+        <a href="nosactivites.html">Activités</a>
+        <a href="profil.html">Profil</a>
+        <a href="#">Communauté</a>
+        <a href="#">Conseils</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- CONTENU -->
+  <main class="flex-1 flex items-center justify-center">
+
+    <div class="suivi-container">
+
+      <!-- TITRE -->
+      <div class="suivi-title">
+        <h2>Tableau de suivi du stress</h2>
+        <p>Votre parcours bien-être en un coup d’œil</p>
+      </div>
+
+      <!-- CARTES STATS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <p class="stat-label">Stress actuel</p>
+          <p class="stat-value">Faible</p>
+          <span>4 / 10</span>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-label">Score d’humeur</p>
+          <p class="stat-value">Bien</p>
+          <span>8 / 10</span>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-label">Qualité du sommeil</p>
+          <p class="stat-value">Excellente</p>
+          <span>8 h en moyenne</span>
+        </div>
+      </div>
+
+      <!-- CONTENU PRINCIPAL -->
+      <div class="suivi-content">
+
+        <!-- GRAPHE -->
+        <div class="card-large">
+          <h3>Suivi du stress sur 7 jours</h3>
+          <img
+            src="../src/assets/graphestress.png"
+            alt="graphe"
+            class="w-full"
+          >
+        </div>
+
+        <!-- ANALYSE -->
+        <div class="card-column">
+          <div class="card-small">
+            <h4>Aperçu du bien-être</h4>
+            <ul>
+              <li>Stress en baisse de 25 % cette semaine</li>
+              <li>Meilleure journée : samedi</li>
+              <li>Continuez la méditation et sortez davantage ce week-end</li>
+            </ul>
+          </div>
+
+          <div class="card-small quote">
+            « Rome ne s’est pas faite en un jour. »
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="suivi-actions">
+        <button
+          class="btn-primary"
+          onclick="window.location.href='questionnaire.html'"
+        >
+          Commencer une nouvelle enquête
+        </button>
+
+     <button class="btn-primary"
+          onclick="window.location.href='activites.html'">
+          Activités recommandées
+        </button>
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- FOOTER (IDENTIQUE) -->
+  <footer class="w-[1440px] h-[120px] bg-[#E8F3EA]">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p>
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants.
+        </p>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input
+            type="email"
+            placeholder="enter your adress mail here"
+            class="flex-1 px-4 outline-none text-sm"
+          >
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

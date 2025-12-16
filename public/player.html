@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon morceau</title>
+    <link rel="stylesheet" href="player.component.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#F5F5E6] m-0 p-0">
+
+<div class="frame-desktop">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/images/img_header_logo.png" alt="Esprit Zen">
+        </div>
+        <nav class="nav">
+            <a class="active">Accueil</a>
+            <a>Activités</a>
+            <a>Profil</a>
+            <a>Communauté</a>
+            <a>Conseils</a>
+        </nav>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="main-content">
+
+        <!-- PLAYLIST -->
+        <aside class="playlist">
+            <h3>Ma liste</h3>
+
+            <div class="track active">
+                <span>Piano apaisant</span>
+                <span class="duration">03:56</span>
+            </div>
+
+            <div class="track">
+                <span>Sons relaxants</span>
+                <span class="duration">03:56</span>
+            </div>
+
+            <div class="track">
+                <span>Sons relaxants</span>
+                <span class="duration">03:56</span>
+            </div>
+
+            <div class="track">
+                <span>Piano apaisant</span>
+                <span class="duration">03:56</span>
+            </div>
+        </aside>
+
+        <!-- PLAYER -->
+        <section class="player">
+
+            <h2>🎵 Mon morceau</h2>
+            <p class="subtitle">
+                Piano apaisant · Sons relaxants · Calme et concentration
+            </p>
+
+            <div class="cover">
+                <img src="../assets/images/images__2_-removebg-preview.png" alt="music">
+            </div>
+
+            <!-- PROGRESSION -->
+            <div class="progress-container">
+                <span>01:56</span>
+                <div class="progress-bar">
+                    <span class="progress"></span>
+                </div>
+                <span>03:56</span>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="controls">
+                <button>⟲</button>
+                <button>⏮</button>
+                <button class="play">▶</button>
+                <button>⏭</button>
+                <button>⟳</button>
+            </div>
+
+            <!-- VOLUME -->
+            <div class="volume">
+                🔊
+                <input type="range" value="30">
+                <span>30%</span>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="description">
+                <p>
+                    StudyCare – Une équipe passionnée qui crée des solutions bien-être
+                    adaptées aux étudiants. <br>
+                    Votre équilibre mental est notre priorité.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div>
+            <p>📍 Cité El Ghazela</p>
+            <p>📞 +216 23 45 65 47</p>
+            <p>✉ EspritZen@gmail.com</p>
+        </div>
+
+        <div>
+            <strong>À propos de nous</strong>
+            <p>
+                StudyCare – Une équipe passionnée qui crée des solutions bien-être adaptées aux étudiants.
+            </p>
+        </div>
+
+        <div class="newsletter">
+            <input type="email" placeholder="enter your address mail here">
+            <button>→</button>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

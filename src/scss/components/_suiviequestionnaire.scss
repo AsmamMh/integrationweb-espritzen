@@ -1,0 +1,79 @@
+/* FRAME DESKTOP FIXE */
+@use "../variables";
+
+/* FRAME */
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* RESULT CARD */
+.result-card {
+  width: 900px;
+  height: 390px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0,0,0,.1);
+  padding: 40px 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TITRE + IMAGE */
+.result-title {
+  font-size: 28px;       /* 🔼 plus grand */
+  font-weight: 600;
+}
+
+/* TEXTE CENTRAL */
+.result-text {
+  text-align: center;
+
+  p {
+    font-size: 22px;     /* 🔼 texte principal */
+    margin-bottom: 12px;
+  }
+}
+
+/* SCORE */
+.score {
+  font-size: 22px;
+
+  span {
+    font-size: 24px;     /* 🔼 valeur mise en avant */
+    font-weight: 600;
+    color: #7F9C60;
+  }
+}
+
+/* ACTIONS */
+.result-actions {
+  display: flex;
+  gap: 48px;
+}
+
+/* BUTTON */
+.btn-primary {
+  width: 292px;
+  height: 44px;
+  background-color: #9DB37C;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 18px;       /* 🔼 texte bouton */
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7F9C60;
+  }
+}
