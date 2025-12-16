@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Esprit Zen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5E6] m-0 p-0">
+<!-- FRAME DESKTOP 1440 x 1024 -->
+<div class="w-[1440px] h-[1024px] mx-auto flex flex-col">
+  <!-- HEADER -->
+  <header class="bg-[#E8F3EA] w-[1440px] h-[64px]">
+    <div class="h-full px-[72px] flex items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-[32px] h-[32px] bg-teal-600 rounded flex items-center justify-center">
+          <span class="text-white text-xl">🏠</span>
+        </div>
+        <span class="text-sm font-medium text-gray-700">Esprit Zen</span>
+      </div>
+      <nav
+        class="flex items-center font-medium text-gray-700"
+        style="margin-left:242px; gap:105px; font-size:24px;"
+      >
+        <a href="suivi-sante.html" class="hover:text-teal-600">Accueil</a>
+        <a href="journal.html" class="hover:text-teal-600">Activités</a>
+        <a href="#" class="hover:text-teal-600">Profil</a>
+        <a href="#" class="hover:text-teal-600">Communauté</a>
+        <a href="feedback.html" class="text-teal-700 font-semibold">Conseils</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="flex-1 px-[72px] py-12 flex items-center justify-center">
+    <div class="w-full max-w-3xl">
+      <!-- TITRE FEEDBACK -->
+      <h1 class="text-3xl font-bold text-gray-800 text-center mb-8">Feedback</h1>
+
+      <!-- QUESTION -->
+      <p class="text-gray-700 text-lg text-center mb-6">
+        Comment évalueriez-vous votre expérience ?
+      </p>
+
+      <!-- ZONE DE TEXTE -->
+      <div class="bg-[#D4CDAF] rounded-lg p-8 mb-8">
+        <textarea
+          placeholder="ecrire ici ........"
+          class="w-full h-64 bg-transparent outline-none resize-none text-gray-700 text-base placeholder-gray-600"
+        ></textarea>
+      </div>
+
+      <!-- ÉTOILES DE NOTATION -->
+      <div class="flex justify-center gap-2 mb-8">
+        <button class="star-btn text-6xl hover:scale-110 transition" data-rating="1">⭐</button>
+        <button class="star-btn text-6xl hover:scale-110 transition" data-rating="2">⭐</button>
+        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="3">⭐</button>
+        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="4">⭐</button>
+        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="5">⭐</button>
+      </div>
+
+      <!-- BOUTON ENVOYER -->
+      <div class="flex justify-end">
+        <button class="bg-[#B8D4A8] hover:bg-[#A8C498] text-gray-700 px-8 py-3 rounded-lg font-medium text-lg transition">
+          Envoyer
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#E8F3EA] w-[1440px] h-[120px]">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p class="text-sm">
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants. Votre équilibre mental est notre priorité.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input
+            type="email"
+            placeholder="enter ton adresse mail ici"
+            class="flex-1 px-4 outline-none text-sm"
+          >
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+// Système d'étoiles interactif
+const starBtns = document.querySelectorAll('.star-btn');
+let currentRating = 2; // Rating par défaut à 2 étoiles
+
+starBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    currentRating = index + 1;
+    updateStars();
+  });
+
+  btn.addEventListener('mouseenter', () => {
+    highlightStars(index + 1);
+  });
+});
+
+document.querySelector('.w-full.max-w-3xl').addEventListener('mouseleave', () => {
+  updateStars();
+});
+
+function updateStars() {
+  starBtns.forEach((btn, index) => {
+    if (index < currentRating) {
+      btn.classList.remove('text-gray-300');
+      btn.classList.add('text-yellow-400');
+    } else {
+      btn.classList.remove('text-yellow-400');
+      btn.classList.add('text-gray-300');
+    }
+  });
+}
+
+function highlightStars(rating) {
+  starBtns.forEach((btn, index) => {
+    if (index < rating) {
+      btn.classList.remove('text-gray-300');
+      btn.classList.add('text-yellow-400');
+    } else {
+      btn.classList.remove('text-yellow-400');
+      btn.classList.add('text-gray-300');
+    }
+  });
+}
+
+// Initialiser les étoiles au chargement
+updateStars();
+</script>
+</body>
+</html>
