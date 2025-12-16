@@ -5,11 +5,11 @@
 
 Membre 1 : mhamdi asma
  Page réalisée :
-Interface d’accueil pour nos services
-Interface questionnaire
-Interface suite du questionnaire (résumé)
-Interface graphique de suivi de stress
-Interface activités recommandées
+Interface d’accueil pour nos services,
+Interface questionnaire,
+Interface suite du questionnaire (résumé),
+Interface graphique de suivi de stress,
+Interface activités recommandées,
 
 Capture d’écran :
 
