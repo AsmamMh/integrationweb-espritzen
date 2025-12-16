@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback - Esprit Zen</title>
+  <title>Journal - Esprit Zen</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F5F5E6] m-0 p-0">
@@ -23,10 +23,10 @@
         style="margin-left:242px; gap:105px; font-size:24px;"
       >
         <a href="suivi-sante.html" class="hover:text-teal-600">Accueil</a>
-        <a href="journal.html" class="hover:text-teal-600">Activités</a>
+        <a href="journal.html" class="text-teal-700 font-semibold">Activités</a>
         <a href="#" class="hover:text-teal-600">Profil</a>
         <a href="#" class="hover:text-teal-600">Communauté</a>
-        <a href="feedback.html" class="text-teal-700 font-semibold">Conseils</a>
+        <a href="feedback.html" class="hover:text-teal-600">Conseils</a>
       </nav>
     </div>
   </header>
@@ -34,35 +34,42 @@
   <!-- CONTENU PRINCIPAL -->
   <main class="flex-1 px-[72px] py-12 flex items-center justify-center">
     <div class="w-full max-w-3xl">
-      <!-- TITRE FEEDBACK -->
-      <h1 class="text-3xl font-bold text-gray-800 text-center mb-8">Feedback</h1>
+      <!-- EN-TÊTE AVEC DATE ET MOOD -->
+      <div class="flex justify-between items-center mb-6">
+        <!-- MOOD SELECTOR -->
+        <div class="flex items-center gap-4">
+          <p class="text-gray-700 font-medium text-lg">Mood</p>
+          <div class="flex gap-3">
+            <button class="mood-btn w-12 h-12 rounded-full flex items-center justify-center text-2xl hover:bg-gray-200 transition">
+              😢
+            </button>
+            <button class="mood-btn w-12 h-12 rounded-full flex items-center justify-center text-2xl hover:bg-gray-200 transition">
+              😐
+            </button>
+            <button class="mood-btn w-12 h-12 rounded-full flex items-center justify-center text-2xl hover:bg-gray-200 transition bg-gray-200">
+              😊
+            </button>
+          </div>
+        </div>
 
-      <!-- QUESTION -->
-      <p class="text-gray-700 text-lg text-center mb-6">
-        Comment évalueriez-vous votre expérience ?
-      </p>
+        <!-- DATE -->
+        <div class="text-gray-700 font-medium text-lg">
+          28/11/2025
+        </div>
+      </div>
 
       <!-- ZONE DE TEXTE -->
       <div class="bg-[#D4DDA6] rounded-lg p-8 mb-8">
         <textarea
-          placeholder="ecrire ici ........"
+          placeholder="Votre journée a été comment ?......."
           class="w-full h-64 bg-transparent outline-none resize-none text-gray-700 text-base placeholder-gray-600"
         ></textarea>
       </div>
 
-      <!-- ÉTOILES DE NOTATION -->
-      <div class="flex justify-center gap-2 mb-8">
-        <button class="star-btn text-6xl hover:scale-110 transition" data-rating="1">⭐</button>
-        <button class="star-btn text-6xl hover:scale-110 transition" data-rating="2">⭐</button>
-        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="3">⭐</button>
-        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="4">⭐</button>
-        <button class="star-btn text-6xl text-gray-300 hover:scale-110 transition" data-rating="5">⭐</button>
-      </div>
-
-      <!-- BOUTON ENVOYER -->
+      <!-- BOUTON ENREGISTRER -->
       <div class="flex justify-end">
         <button class="bg-[#B0D193] hover:bg-[#A8C498] text-gray-700 px-8 py-3 rounded-lg font-medium text-lg transition">
-          Envoyer
+          Enregistrer
         </button>
       </div>
     </div>
@@ -98,51 +105,14 @@
 </div>
 
 <script>
-// Système d'étoiles interactif
-const starBtns = document.querySelectorAll('.star-btn');
-let currentRating = 2; // Rating par défaut à 2 étoiles
-
-starBtns.forEach((btn, index) => {
+// Sélection du mood
+const moodBtns = document.querySelectorAll('.mood-btn');
+moodBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    currentRating = index + 1;
-    updateStars();
-  });
-
-  btn.addEventListener('mouseenter', () => {
-    highlightStars(index + 1);
+    moodBtns.forEach(b => b.classList.remove('bg-gray-200'));
+    btn.classList.add('bg-gray-200');
   });
 });
-
-document.querySelector('.w-full.max-w-3xl').addEventListener('mouseleave', () => {
-  updateStars();
-});
-
-function updateStars() {
-  starBtns.forEach((btn, index) => {
-    if (index < currentRating) {
-      btn.classList.remove('text-gray-300');
-      btn.classList.add('text-yellow-400');
-    } else {
-      btn.classList.remove('text-yellow-400');
-      btn.classList.add('text-gray-300');
-    }
-  });
-}
-
-function highlightStars(rating) {
-  starBtns.forEach((btn, index) => {
-    if (index < rating) {
-      btn.classList.remove('text-gray-300');
-      btn.classList.add('text-yellow-400');
-    } else {
-      btn.classList.remove('text-yellow-400');
-      btn.classList.add('text-gray-300');
-    }
-  });
-}
-
-// Initialiser les étoiles au chargement
-updateStars();
 </script>
 </body>
 </html>
