@@ -1,555 +1,897 @@
-*, ::before, ::after {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
+/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+.mx-auto {
+  margin-inline: auto;
 }
-
-::backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
+.block {
+  display: block;
 }
-
-/*
-! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
-*/
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  /* 1 */
-  border-width: 0;
-  /* 2 */
-  border-style: solid;
-  /* 2 */
-  border-color: #e5e7eb;
-  /* 2 */
+.flex {
+  display: flex;
 }
-
-::before,
-::after {
-  --tw-content: '';
+.grid {
+  display: grid;
 }
-
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
-
-html,
-:host {
-  line-height: 1.5;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
-  /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 4 */
-  font-feature-settings: normal;
-  /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
+.hidden {
+  display: none;
 }
-
-/*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-
-body {
-  margin: 0;
-  /* 1 */
-  line-height: inherit;
-  /* 2 */
+.h-\[32px\] {
+  height: 32px;
 }
-
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
-hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  border-top-width: 1px;
-  /* 3 */
+.h-\[48px\] {
+  height: 48px;
 }
-
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+.h-\[64px\] {
+  height: 64px;
 }
-
-/*
-Remove the default font size and weight for headings.
-*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+.h-\[120px\] {
+  height: 120px;
 }
-
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
-a {
-  color: inherit;
-  text-decoration: inherit;
+.h-\[1024px\] {
+  height: 1024px;
 }
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
+.h-full {
+  height: 100%;
 }
-
-/*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
-  font-size: 1em;
-  /* 4 */
+.h-screen {
+  height: 100vh;
 }
-
-/*
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
+.w-\[48px\] {
+  width: 48px;
 }
-
-/*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+.w-\[280px\] {
+  width: 280px;
 }
-
-sub {
-  bottom: -0.25em;
+.w-\[1440px\] {
+  width: 1440px;
 }
-
-sup {
-  top: -0.5em;
+.w-full {
+  width: 100%;
 }
-
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
-table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
-  border-collapse: collapse;
-  /* 3 */
+.flex-1 {
+  flex: 1;
 }
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  font-weight: inherit;
-  /* 1 */
-  line-height: inherit;
-  /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
-  color: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
+.resize-none {
+  resize: none;
 }
-
-/*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
-button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
-  -webkit-appearance: button;
-  /* 1 */
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+.bg-\[\#B0D193\] {
+  background-color: #B0D193;
+}
+.bg-\[\#D4DDA6\] {
+  background-color: #D4DDA6;
+}
+.bg-\[\#E8F3EA\] {
+  background-color: #E8F3EA;
+}
+.bg-\[\#F5F5E6\] {
+  background-color: #F5F5E6;
+}
+.bg-transparent {
   background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
 }
-
-/*
-Use the modern Firefox focus style for all focusable elements.
-*/
-
-:-moz-focusring {
-  outline: auto;
+.px-\[72px\] {
+  padding-inline: 72px;
 }
-
-/*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
+.text-center {
+  text-align: center;
 }
-
-/*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
+.text-right {
+  text-align: right;
 }
-
-/*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
+.text-\[16px\] {
+  font-size: 16px;
 }
-
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+.text-\[24px\] {
+  font-size: 24px;
 }
-
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
+.text-inherit {
+  color: inherit;
 }
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+.no-underline {
+  text-decoration-line: none;
 }
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
+.filter {
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
-
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
+.transition {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
 }
-
-fieldset {
-  margin: 0;
-  padding: 0;
+.outline-none {
+  --tw-outline-style: none;
+  outline-style: none;
 }
-
-legend {
-  padding: 0;
+.hover\:scale-110 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
 }
-
-ol,
-ul,
-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.hover\:bg-\[\#A8C498\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: #A8C498;
+    }
+  }
 }
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
+.hover\:bg-\[\#C4BDAF\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: #C4BDAF;
+    }
+  }
 }
-
-/*
-Prevent resizing textareas horizontally by default.
-*/
-
-textarea {
-  resize: vertical;
+@charset "UTF-8";
+.health-dashboard .health-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 24px;
 }
-
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
+.health-dashboard .health-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
 }
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
+.health-dashboard .health-card {
+  background-color: #D4CDAF;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.2s;
 }
-
-/*
-Set the default cursor for buttons.
-*/
-
-button,
-[role="button"] {
+.health-dashboard .health-card:hover {
+  transform: translateY(-2px);
+}
+.health-dashboard .health-card .icon-container {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.health-dashboard .health-card .icon-container svg {
+  width: 40px;
+  height: 40px;
+}
+.health-dashboard .health-card .card-content .label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+.health-dashboard .health-card .card-content .value {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+.health-dashboard .action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.health-dashboard .action-buttons button {
+  background-color: #D4CDAF;
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.health-dashboard .action-buttons button:hover {
+  background-color: #C4BDAF;
+}
+.health-dashboard .modify-btn {
+  background-color: #B8D4A8;
+  color: #666;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.health-dashboard .modify-btn:hover {
+  background-color: #A8C498;
+}
+.journal-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+.journal-container .journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.journal-container .journal-header .mood-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.journal-container .journal-header .mood-selector .mood-label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+.journal-container .journal-header .mood-selector .mood-buttons {
+  display: flex;
+  gap: 12px;
+}
+.journal-container .journal-header .mood-selector .mood-buttons .mood-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.journal-container .journal-header .mood-selector .mood-buttons .mood-btn:hover {
+  background-color: #E5E5E5;
+}
+.journal-container .journal-header .mood-selector .mood-buttons .mood-btn.active {
+  background-color: #E5E5E5;
+}
+.journal-container .journal-header .journal-date {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+.journal-container .journal-textarea {
+  background-color: #D4CDAF;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.journal-container .journal-textarea textarea {
+  width: 100%;
+  height: 256px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  color: #666;
+  font-family: inherit;
+}
+.journal-container .journal-textarea textarea::placeholder {
+  color: #999;
+}
+.journal-container .journal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.journal-container .journal-actions .save-btn {
+  background-color: #B8D4A8;
+  color: #666;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.journal-container .journal-actions .save-btn:hover {
+  background-color: #A8C498;
+}
+.feedback-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+.feedback-container .feedback-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 32px;
+}
+.feedback-container .feedback-question {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.feedback-container .feedback-textarea {
+  background-color: #D4CDAF;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.feedback-container .feedback-textarea textarea {
+  width: 100%;
+  height: 256px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  color: #666;
+  font-family: inherit;
+}
+.feedback-container .feedback-textarea textarea::placeholder {
+  color: #999;
+}
+.feedback-container .rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.feedback-container .rating-stars .star-btn {
+  font-size: 48px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.feedback-container .rating-stars .star-btn:hover {
+  transform: scale(1.1);
+}
+.feedback-container .rating-stars .star-btn.active {
+  color: #FFD700;
+}
+.feedback-container .rating-stars .star-btn.inactive {
+  color: #D1D5DB;
+}
+.feedback-container .feedback-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.feedback-container .feedback-actions .submit-btn {
+  background-color: #B8D4A8;
+  color: #666;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.feedback-container .feedback-actions .submit-btn:hover {
+  background-color: #A8C498;
+}
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.question-card {
+  width: 1120px;
+  height: 659px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.question-block p {
+  font-size: 24px;
+  margin-bottom: 27px;
+}
+.answer-btn {
+  width: 1080px;
+  height: 40px;
+  background-color: #D4DDA6;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
-
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
-:disabled {
-  cursor: default;
+.question-block .answer-btn:last-child {
+  margin-bottom: 0;
 }
-
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
+.answer-btn:hover {
+  background-color: #B0D193;
+}
+.answer-btn.active {
+  background-color: #9DB37C;
+  font-weight: 600;
+}
+.btn-next {
+  width: 118px;
+  height: 44px;
+  background-color: #9DB37C;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-next:hover {
+  background-color: #7F9C60;
+}
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #E5E7EB;
+  border-radius: 4px;
+}
+.progress-bar span {
   display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
+  height: 100%;
+  background-color: #9DB37C;
+  border-radius: 4px;
 }
-
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
 }
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden]:where(:not([hidden="until-found"])) {
-  display: none;
+.result-card {
+  width: 900px;
+  height: 390px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.result-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.result-text {
+  text-align: center;
+}
+.result-text p {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.score {
+  font-size: 22px;
+}
+.score span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #7F9C60;
+}
+.result-actions {
+  display: flex;
+  gap: 48px;
+}
+.btn-primary {
+  width: 292px;
+  height: 44px;
+  background-color: #9DB37C;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #7F9C60;
+}
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.suivi-container {
+  width: 1120px;
+  margin: 35px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.suivi-title {
+  height: 105px;
+  background-color: #D4DDA6;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+.suivi-title h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.suivi-title p {
+  font-size: 16px;
+}
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+}
+.stat-card {
+  width: 240px;
+  height: 134px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.stat-card .stat-label {
+  font-size: 15px;
+  color: #6B7280;
+}
+.stat-card .stat-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+.stat-card span {
+  font-size: 15px;
+  color: #7F9C60;
+}
+.suivi-content {
+  display: flex;
+  gap: 32px;
+}
+.card-large {
+  width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card-large h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-small {
+  width: 360px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card-small h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card-small ul {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+}
+.suivi-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto 52px auto;
+}
+.btn-primary, .btn-secondary {
+  width: 292px;
+  height: 44px;
+  background-color: #9DB37C;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #7F9C60;
+}
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.activities-container {
+  width: 1120px;
+  margin: 35px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.activities-title {
+  height: 105px;
+  background-color: #D4DDA6;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+.activities-title h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.activities-title p {
+  font-size: 18px;
+}
+.activities-filters {
+  display: flex;
+  gap: 16px;
+}
+.activities-filters .filter {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #F3F4F6;
+  font-size: 16px;
+  cursor: pointer;
+}
+.activities-filters .filter.active {
+  background: #9DB37C;
+  color: white;
+}
+.activities-cards {
+  display: flex;
+  gap: 16px;
+}
+.activity-card {
+  width: 366px;
+  height: 385px;
+  background: white;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.activity-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.activity-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.activity-card p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+.frame-desktop {
+  width: 1440px;
+  height: 1120px;
+  margin: 0 auto;
+  background-color: #F5F5E6;
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.activities-container {
+  width: 1120px;
+  margin: 35px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.activities-title {
+  height: 105px;
+  background-color: #D4DDA6;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+.activities-title h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.activities-title p {
+  font-size: 18px;
+}
+.activities-filters {
+  display: flex;
+  gap: 16px;
+}
+.activities-filters .filter {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #F3F4F6;
+  font-size: 16px;
+  cursor: pointer;
+}
+.activities-filters .filter.active {
+  background: #9DB37C;
+  color: white;
+}
+.activities-cards {
+  display: flex;
+  gap: 16px;
+}
+.activity-card {
+  width: 366px;
+  height: 385px;
+  background: white;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.activity-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.activity-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.activity-card p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
 }
