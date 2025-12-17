@@ -2,116 +2,115 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esprit Zen – Pomodoro</title>
-    <link rel="stylesheet" href="style.css"></head>
-
+    <title>Esprit Zen - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<div class="frame">
+
+<div class="app">
 
     <!-- HEADER -->
     <header class="header">
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="assets/logo.svg" alt="Logo">
-                <span>Esprit Zen</span>
-            </div>
-
-            <nav class="nav">
-                <a class="active">Accueil</a>
-                <a>Activités</a>
-                <a>Profil</a>
-                <a>Communauté</a>
-                <a>Conseils</a>
-            </nav>
-        </div>
+        <div class="logo">🌿 Esprit Zen</div>
+        <nav class="nav">
+            <a class="active">Accueil</a>
+            <a>Activités</a>
+            <a>Profil</a>
+            <a>Communauté</a>
+            <a>Conseils</a>
+        </nav>
     </header>
 
-    <!-- MAIN -->
-    <main class="main">
+    <!-- CONTENT -->
+    <main class="content">
 
-        <!-- STATS (PLACÉES AU-DESSUS DU TIMER) -->
-        <section class="stats">
-            <div class="stat-card">
-                <p>Séances d’aujourd’hui</p>
-                <span>2</span>
-            </div>
-            <div class="stat-card">
-                <p>Temps de concentration total</p>
-                <span>0 min</span>
-            </div>
-            <div class="stat-card">
-                <p>Série actuelle</p>
-                <span>3 jours</span>
-            </div>
-        </section>
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat">Séances d’aujourd’hui <span>2</span></div>
+            <div class="stat">Temps de concentration total <span>0 min</span></div>
+            <div class="stat">Série actuelle <span>3 jours</span></div>
+        </div>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <div class="soft">pause longue<br><small>(15m)</small></div>
+            <div class="primary">Durée<br><small>(25m)</small></div>
+            <div class="soft">pause courte<br><small>(5m)</small></div>
+        </div>
 
         <!-- TIMER -->
-        <section class="timer-section">
-
-            <!-- OPTIONS -->
-            <div class="timer-options">
-                <button>Pause longue<br><small>15 min</small></button>
-                <button class="active">Durée<br><small>25 min</small></button>
-                <button>Pause courte<br><small>5 min</small></button>
+        <div class="timer-wrapper">
+            <div class="timer">
+                <div class="time">25:00 <span>+</span></div>
+                <p>Temps de mise au point</p>
             </div>
 
-            <!-- CERCLE -->
-            <div class="timer-circle">
-                <div class="timer-inner">
-                    <span class="time">25:00</span>
-                    <p>Temps de mise au point</p>
-                </div>
-            </div>
-
-            <!-- CONTROLES -->
-            <div class="timer-controls">
+            <div class="timer-actions">
                 <button class="play">▶</button>
                 <button class="reset">⟳</button>
             </div>
+        </div>
 
-        </section>
-
-        <!-- BOTTOM -->
-        <section class="bottom-cards">
+        <!-- BOTTOM CARDS -->
+        <div class="bottom">
 
             <div class="card">
-                <h3>Paramètres ⚙</h3>
+                <div class="card-header">
+                    <h3>Paramètres</h3>
+                    <span>⚙</span>
+                </div>
                 <ul>
-                    <li>Auto-start breaks</li>
-                    <li>Auto-start sessions</li>
-                    <li>Notifications</li>
+                    <li>Auto-start breaks <span class="dot"></span></li>
+                    <li>Auto-start sessions <span class="dot"></span></li>
+                    <li>Notifications <span class="dot"></span></li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3>Progression du jour ↗</h3>
-                <ul>
-                    <li>Session 1</li>
-                    <li>Session 2</li>
-                    <li>Session 3</li>
+                <div class="card-header">
+                    <h3>Progressions du jour</h3>
+                    <span>📈</span>
+                </div>
+                <ul class="progress">
+                    <li>• Session 1</li>
+                    <li>• Session 1</li>
+                    <li>• Session 1</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3>Alarmes 🔔</h3>
-                <ul>
-                    <li>10:00 active</li>
-                    <li>13:00 active</li>
-                    <li>16:00 active</li>
-                    <button class="add">+</button>
+                <div class="card-header">
+                    <h3>Alarmes</h3>
+                    <span>⏰</span>
+                </div>
+                <ul class="alarms">
+                    <li>10:00 <span>active</span></li>
+                    <li>12:00 <span>active</span></li>
+                    <li>16:00 <span>active</span></li>
                 </ul>
+                <div class="add">＋</div>
             </div>
 
-        </section>
+        </div>
 
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>📍 Cité El Ghazela – 📞 +216 23 45 65 47 – ✉ EspritZen@gmail.com</p>
+        <div class="contact">
+            <p>📍 Cité El Ghazella</p>
+            <p>📞 +216 23 45 65 47</p>
+            <p>✉ EspritZen@gmail.com</p>
+        </div>
+
+        <div class="newsletter">
+            <input type="email" placeholder="enter your address mail here">
+            <button>➤</button>
+        </div>
     </footer>
 
 </div>
+
 </body>
 </html>
