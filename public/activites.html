@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Activités</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./style.css"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body class="app-body">
+
+<div class="frame-desktop">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <img src="../src/assets/logo.svg" style="height:32px;" alt="logo">
+
+    <nav class="nav">
+      <a href="index.html" style="text-decoration:none; color:#2F3E2E;">Accueil</a>
+      <a class="active">Activités</a>
+      <a href="track.html" style="text-decoration:none; color:#2F3E2E;">Track</a>
+      <a href="location.html" style="text-decoration:none; color:#2F3E2E;">Location</a>
+      <a href="#" style="text-decoration:none; color:#2F3E2E;">History</a>
+    </nav>
+  </header>
+
+  <!-- CONTENU -->
+  <main class="activities-container">
+    <!-- CONTAINER FOR TYPE CARDS -->
+    <div class="type-cards-container">
+      <!-- CARTE TYPE PRINCIPALE -->
+      <aside class="filter-card">
+        <h3>Type</h3>
+
+        <div class="filter-item">
+          <span class="dot"></span>
+          Individuel
+        </div>
+
+        <div class="filter-item">
+          <span class="dot"></span>
+          Collective
+        </div>
+      </aside>
+    </div>
+    
+    <!-- ACTIVITÉS -->
+    <section class="activities-grid">
+      <!-- CARTES ACTIVITÉS -->      
+      <div class="activity-card">
+        <img src="../src/assets/boom-box.png" alt="Boom Box">
+        <h4>Boom Box</h4>
+        <p>
+          Boom Box est un club de musique où vous pouvez jouer d'un instrument 
+          ou chanter pour vous détendre et évacuer le stress accumulé.
+        </p>
+        <button>
+          Participer
+        </button>  
+      </div>
+
+      <div class="activity-card">
+        <img src="../src/assets/cyclit.png" alt="Cycl'it">
+        <h4>Cycl'It</h4>
+        <p>
+          Cycl'It est un club de cyclisme pour vous exercer à faire du vélo dans un endroit sécurisé pour se défouler en groupe.
+        </p>
+        <button>
+          Participer
+        </button>
+      </div>
+
+      <div class="activity-card">
+        <img src="../src/assets/yoga.png" alt="Yoga">
+        <h4>Namaste</h4>
+        <p>
+          Namaste est un club de yoga qui vous sera accompagné d'un professionnel pour vous aider à vous détendre.
+        </p>
+        <button>
+          Participer
+        </button>
+      </div>
+
+      <div class="activity-card">
+        <img src="../src/assets/read-it.png" alt="Read it">
+        <h4>Read it</h4>
+        <p>
+          Read it sera un club de lecture où vous pourrez faire des pauses et lire un livre dans un espace calme.
+        </p>
+        <button>
+          Participer
+        </button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p>
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants.
+        </p>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input
+            type="email"
+            placeholder="enter your adress mail here"
+            class="flex-1 px-4 outline-none text-sm"
+          >
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

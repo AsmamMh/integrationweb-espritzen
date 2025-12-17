@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Track</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body class="app-body">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <img src="../src/assets/logo.svg" style="height:32px;" alt="logo">
+
+    <nav class="nav">
+      <a href="index.html" style="text-decoration:none; color:#2F3E2E;">Accueil</a>
+      <a href="activites.html"  style="text-decoration:none; color:#2F3E2E;">Activités</a>
+      <a class="active">Track</a>
+      <a href="location.html" style="text-decoration:none; color:#2F3E2E;">Location</a>
+      <a href="#" style="text-decoration:none; color:#2F3E2E;">History</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="dashboard-container">
+    <section class="dashboard-card">
+
+      <div class="circle-grid">
+
+        <div class="metric">
+          <div class="circle">
+            <span>305<br>Steps</span>
+          </div>
+          <p>Objectif reached!<br>Well done!</p>
+        </div>
+
+        <div class="metric">
+          <div class="circle">
+            <span>KM<br>2km</span>
+          </div>
+          <p>Objectif reached!<br>Well done!</p>
+        </div>
+
+        <div class="metric">
+          <div class="circle">
+            <span>Kcals<br>200 kcal</span>
+          </div>
+          <p>Objectif reached!<br>Well done!</p>
+        </div>
+
+        <div class="metric">
+          <div class="circle">
+            <span>WATER<br>2400ml</span>
+          </div>
+          <p>Objectif reached!<br>Well done!</p>
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button>History</button>
+        <button>Synchronise</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="h-full px-[72px] grid grid-cols-3 items-center text-gray-700">
+      <div>
+        <p class="font-semibold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-1">À propos de nous</p>
+        <p>
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être
+          adaptées aux étudiants.
+        </p>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="flex bg-white rounded-full overflow-hidden border w-[280px]">
+          <input
+            type="email"
+            placeholder="enter your adress mail here"
+            class="flex-1 px-4 outline-none text-sm"
+          >
+          <button class="px-4 text-green-700 font-bold">→</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
