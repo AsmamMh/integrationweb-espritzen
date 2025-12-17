@@ -24,7 +24,19 @@
   background-color: #CBE4D6;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 72px;
+}
+
+.header-inner {
+  width: 1440px;
+  padding: 0 72px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
 }
 
 .main-footer {
@@ -81,9 +93,8 @@
 
 /* GRID DES ACTIVITÉS */
 .activities-grid {
-  //flex: 1;
   display: grid;
-  grid-template-columns: repeat(2, 340px);
+  grid-template-columns: repeat(2, 400px);
   column-gap: 46px; /* spacing horizontal */
   row-gap: 75px;    /* spacing vertical */
   align-self: flex-start;
@@ -100,7 +111,7 @@
 
   display: flex;
   flex-direction: column;
-  //justify-content: space-between;
+  justify-content: space-between;
 
   img {
     width: 137px;

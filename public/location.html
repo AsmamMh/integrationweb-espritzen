@@ -15,17 +15,16 @@
 
   <!-- HEADER -->
   <header class="main-header">
-    <div class="logo">
-      <img src="../src/assets/logo.svg" alt="Esprit Zen">
-    </div>
-
+    <img src="../src/assets/logo.svg" class="logo" alt="Esprit Zen">
+  <div class="header-inner">
     <nav class="nav">
       <a href="index.html">Accueil</a>
-      <a href="activites.html">Activités</a>
+      <a href="activites_taieb.html">Activités</a>
       <a href="track.html">Track</a>
       <a class="active">Location</a>
       <a>History</a>
     </nav>
+  </div>
   </header>
 
   <!-- MAIN -->
@@ -78,7 +77,22 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="location.js"></script>
+  <script>
+    // Initialize map
+const map = L.map('map').setView([36.8992, 10.1897], 16); // Esprit El Ghazela
+
+// Map tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap'
+}).addTo(map);
+
+// Buttons
+document.getElementById('zoomInBtn').onclick = () => map.zoomIn();
+document.getElementById('zoomOutBtn').onclick = () => map.zoomOut();
+document.getElementById('centerBtn').onclick = () =>
+  map.setView([36.8992, 10.1897], 16);
+
+  </script>
 
 </body>
 </html>
