@@ -5,14 +5,19 @@
     <title>Esprit Zen - Accueil</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
 <div class="app">
 
+
+
     <!-- HEADER -->
     <header class="header">
-        <div class="logo">🌿 Esprit Zen</div>
+        <div class="logo">
+            <img src="../assets/images/img_header_logo.png" alt="Esprit Zen">
+        </div>
         <nav class="nav">
             <a class="active">Accueil</a>
             <a>Activités</a>
@@ -34,9 +39,9 @@
 
         <!-- CONTROLS -->
         <div class="controls">
-            <div class="soft">pause longue<br><small>(15m)</small></div>
+            <div class="soft">Pause longue<br><small>(15m)</small></div>
             <div class="primary">Durée<br><small>(25m)</small></div>
-            <div class="soft">pause courte<br><small>(5m)</small></div>
+            <div class="soft">Pause courte<br><small>(5m)</small></div>
         </div>
 
         <!-- TIMER -->
@@ -74,8 +79,8 @@
                 </div>
                 <ul class="progress">
                     <li>• Session 1</li>
-                    <li>• Session 1</li>
-                    <li>• Session 1</li>
+                    <li>• Session 2</li>
+                    <li>• Session 3</li>
                 </ul>
             </div>
 
@@ -96,6 +101,9 @@
 
     </main>
 
+    <!-- BOUTON RETOUR -->
+    <div class="back-button" onclick="history.back()">← Retour</div>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="contact">
@@ -105,7 +113,7 @@
         </div>
 
         <div class="newsletter">
-            <input type="email" placeholder="enter your address mail here">
+            <input type="email" placeholder="Enter your email">
             <button>➤</button>
         </div>
     </footer>

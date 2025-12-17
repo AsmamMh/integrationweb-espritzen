@@ -214,3 +214,24 @@ body {
     }
   }
 }
+
+.back-button {
+  display: inline-block;
+  margin: 20px;           // top et left margin
+  padding: 6px 12px;      // moins de padding pour un petit bouton
+  font-size: 12px;        // texte un peu plus petit
+  background-color: #dfeac2;
+  color: #4a5d3b;
+  font-weight: 500;
+  border: 1px solid #c8d6b8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 60px;            // ajuste la largeur automatiquement au texte
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #cfe8db;
+}
+

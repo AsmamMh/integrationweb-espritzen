@@ -35,15 +35,15 @@
                 <ul class="menu">
                     <li class="active">🏠 Accueil</li>
                     <li>➕ Ajouter une playlist</li>
-                    <li id="fav">❤️ Favoris</li>
-                    <li>📚 Bibliothèques</li>
+                    <li>❤️ Favoris</li>
+
                 </ul>
             </aside>
 
             <!-- CONTENT -->
             <section class="content">
                 <!-- PLAYLISTS -->
-                <h3>📂 Playlists</h3>
+                <h3>📂 Playlists favoris</h3>
                 <div class="playlists">
                     <div class="card">
                         <img src="../assets/images/img_image_32.png">
@@ -68,9 +68,7 @@
                     <div class="track" data-src="player.html"><button>▶</button><span>Piano apaisant</span><small>03:56</small></div>
                     <div class="track" data-src="player.html"><button>▶</button><span>Musique Zen</span><small>03:56</small></div>
                     <div class="track" data-src="player.html"><button>▶</button><span>Sommeil & détente</span><small>03:56</small></div>
-                    <div class="track" data-src="player.html"><button>▶</button><span>Ambiance forêt</span><small>03:56</small></div>
-                    <div class="track" data-src="player.html"><button>▶</button><span>Mer et vagues</span><small>03:56</small></div>
-                    <div class="track" data-src="player.html"><button>▶</button><span>Chants d’oiseaux</span><small>03:56</small></div>
+
                 </div>
 
 
@@ -112,23 +110,6 @@
             // redirection vers la page du player
             const page = track.getAttribute('data-src');
             if (page) window.location.href = page;
-        });
-    });
-</script>
-<script>
-    // Redirection vers page favoris
-    document.getElementById('fav').addEventListener('click', () => {
-        window.location.href = 'listFav.html'; // ton fichier de favoris
-    });
-
-    // Tracks existants pour player
-    const tracks = document.querySelectorAll('.track');
-    tracks.forEach(track => {
-        track.addEventListener('click', () => {
-            tracks.forEach(t => t.classList.remove('active'));
-            track.classList.add('active');
-            const page = track.getAttribute('data-src');
-            if (page) window.location.href = page; // va vers player.html
         });
     });
 </script>
