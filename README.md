@@ -20,8 +20,12 @@ Capture d’écran :
 <img width="1176" height="921" alt="graphe de stress" src="https://github.com/user-attachments/assets/bfca27e4-aed5-4977-918c-84daaf3517d4" />
 
 
-* Membre 2 :
-  📄 Page réalisée : 
+* Membre 2 : Bel hadj ali Taieb amine
+  📄 Page réalisée :
+  Interface liste des activités,
+  Interface  de track (KM,Steps,Water,Kcal),
+  Interface location des espaces verts a proximité,
+  Interface d'historique,
   📸 Capture d’écran :
 
   
