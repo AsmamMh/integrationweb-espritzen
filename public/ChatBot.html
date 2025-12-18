@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>StudyCare UI</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h1 class="logo">StudyCare</h1>
+
+        <input class="search" placeholder="Rechercher..." type="search"/>
+
+        <nav class="menu">
+            <button class="menu-item active" id="newChatBtn">Nouveau chat</button>
+            <button class="menu-item">Chats récents</button>
+            <button class="menu-item">Favoris</button>
+        </nav>
+
+        <div class="user">
+            <span>Mouadh</span>
+            <button class="pro">Version Pro</button>
+        </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- ================= HEADER ================= -->
+        <header class="header">
+            <div class="logo">
+                <img src="../src/assets/Acceuil/logo.png" alt="Esprit Zen">
+            </div>
+            <nav class="nav">
+                <a class="active">Accueil</a>
+                <a>Activités</a>
+                <a>Profil</a>
+                <a>Communauté</a>
+                <a>Conseils</a>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="toolbar">
+                <button class="btn">Générer une photo</button>
+            </div>
+
+            <section class="chat" id="chatBox">
+                <h2>Aujourd’hui</h2>
+
+                <!-- Messages ajoutés dynamiquement ici -->
+            </section>
+
+            <!-- INPUT MESSAGE -->
+            <div class="chat-input">
+                <input id="messageInput" type="text" placeholder="Taper un message">
+                <button id="sendBtn">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                <p>📍 Cité El Ghazela</p>
+                <p>📞 +216 23 45 65 47</p>
+                <p>✉ EspritZen@gmail.com</p>
+            </div>
+            <div>
+                <strong>À propos de nous</strong>
+                <p>StudyCare – Une équipe passionnée qui crée des solutions bien-être adaptées aux étudiants.</p>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="enter your address mail here">
+                <button>→</button>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<script>
+    const input = document.getElementById("messageInput");
+    const sendBtn = document.getElementById("sendBtn");
+    const chatBox = document.getElementById("chatBox");
+    const newChatBtn = document.getElementById("newChatBtn");
+
+    function sendMessage() {
+        const text = input.value.trim();
+        if (text === "") return;
+
+        // Message utilisateur
+        const userMsg = document.createElement("div");
+        userMsg.className = "message user";
+        userMsg.textContent = text;
+        chatBox.appendChild(userMsg);
+
+        input.value = "";
+        scrollBottom();
+
+        // Animation "IA réfléchit..."
+        const typing = document.createElement("div");
+        typing.className = "typing";
+        typing.innerHTML = `
+            IA réfléchit
+            <span class="dots">
+                <span>.</span><span>.</span><span>.</span>
+            </span>
+        `;
+        chatBox.appendChild(typing);
+        scrollBottom();
+
+        // Réponse assistant après délai
+        setTimeout(() => {
+            typing.remove();
+
+            const assistantMsg = document.createElement("div");
+            assistantMsg.className = "message assistant";
+            assistantMsg.innerHTML = `
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+                         alt="Étudiants">
+                    <span>Image créée</span>
+                </div>
+            `;
+            chatBox.appendChild(assistantMsg);
+            scrollBottom();
+        }, 2000);
+    }
+
+    function scrollBottom() {
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Envoi message
+    sendBtn.addEventListener("click", sendMessage);
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    });
+
+    // 🔁 Nouveau chat
+    newChatBtn.addEventListener("click", () => {
+        chatBox.innerHTML = "<h2>Aujourd’hui</h2>";
+    });
+</script>
+</body>
+</html>

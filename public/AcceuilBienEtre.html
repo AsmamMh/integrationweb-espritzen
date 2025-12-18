@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil Bien-Être</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="acceuil-bien-etre">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="../src/assets/Acceuil/logo.png" alt="Esprit Zen">
+        </div>
+        <nav class="nav">
+            <a class="active">Accueil</a>
+            <a>Activités</a>
+            <a>Profil</a>
+            <a>Communauté</a>
+            <a>Conseils</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="abe-main">
+
+        <!-- SIDEBAR -->
+        <aside class="abe-sidebar">
+            <ul class="menu">
+                <li>🏠 Home</li>
+                <li>📚 Bibliothèque</li>
+                <li>🚪 Déconnexion</li>
+            </ul>
+
+            <div class="suggestion">
+                <h4>Suggestion du jour</h4>
+                <p>Essaie une session Pomodoro de 25 minutes pour booster ton énergie</p>
+            </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <section class="abe-content">
+
+            <h1>Bonjour ! Prêt(e) à prendre soin de toi aujourd’hui ?</h1>
+
+            <input type="search" class="search-bar" placeholder="Search">
+
+            <div class="activities grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card Musique -->
+                <div class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                    <div class="bg-white rounded-xl p-3">
+                        <img src="../src/assets/Acceuil/musique.png"
+                             class="w-full aspect-[416/200] object-cover rounded-lg"
+                             alt="musique"/>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold">Musique</h3>
+                    <p class="text-sm mb-4">Relax avec nos sons</p>
+                    <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                        Consulter
+                    </button>
+                </div>
+
+                <!-- Card Jeux -->
+                <div class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                    <div class="bg-white rounded-xl p-3">
+                        <img src="../src/assets/Acceuil/games.png"
+                             class="w-full aspect-[416/200] object-cover rounded-lg"
+                             alt="game"/>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold">Jeux</h3>
+                    <p class="text-sm mb-4">Joue et détends-toi</p>
+                    <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                        Consulter
+                    </button>
+                </div>
+
+                <!-- Card Chat -->
+                <div class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                    <div class="bg-white rounded-xl p-3">
+                        <img src="../src/assets/Acceuil/promodoro.png"
+                             class="w-full aspect-[416/200] object-cover rounded-lg"
+                             alt="promodoro"/>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold">Promodoro</h3>
+                    <p class="text-sm mb-4">Focus sans stress.</p>
+                    <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                        Consulter
+                    </button>
+                </div>
+
+                <!-- Card Chat 2 -->
+                <div class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                    <div class="bg-white rounded-xl p-3">
+                        <img src="../src/assets/Acceuil/chat.png"
+                             class="w-full aspect-[416/200] object-cover rounded-lg"
+                             alt="chat"/>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold">Chat</h3>
+                    <p class="text-sm mb-4">Mode individuel</p>
+                    <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                        Consulter
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="abe-pagination">
+        <button class="page-btn">&lt;</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">&gt;</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div>
+            <p>📍 Cité El Ghazela</p>
+            <p>📞 +216 23 45 65 47</p>
+            <p>✉ EspritZen@gmail.com</p>
+        </div>
+        <div>
+            <strong>À propos de nous</strong>
+            <p>StudyCare – Une équipe passionnée qui crée des solutions bien-être adaptées aux étudiants.</p>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="enter your address mail here">
+            <button>→</button>
+        </div>
+    </footer>
+
+</div>
+<script>
+    const searchInput = document.querySelector(".search-bar");
+    const cards = document.querySelectorAll(".activity-card");
+
+    searchInput.addEventListener("input", function () {
+        const query = this.value.toLowerCase().trim();
+
+        cards.forEach(card => {
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            const description = card.querySelector("p").textContent.toLowerCase();
+
+            if (title.includes(query) || description.includes(query)) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

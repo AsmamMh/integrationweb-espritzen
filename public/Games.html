@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Liste des jeux</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo">
+        <img src="../src/assets/Acceuil/logo.png" alt="Esprit Zen">
+    </div>
+    <nav class="nav">
+        <a class="active">Accueil</a>
+        <a>Activités</a>
+        <a>Profil</a>
+        <a>Communauté</a>
+        <a>Conseils</a>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Filtrage</h2>
+
+        <div class="filter">
+            <label>
+                Prix :
+                <span id="priceValue">200</span> DT
+            </label>
+            <input
+                    type="range"
+                    id="priceFilter"
+                    min="0"
+                    max="200"
+                    value="200"
+            />
+        </div>
+
+
+        <div class="filter">
+            <label>Catégorie</label>
+            <ul>
+                <li><input type="checkbox" class="category" value="Action"> Action</li>
+                <li><input type="checkbox" class="category" value="Aventure"> Aventure</li>
+                <li><input type="checkbox" class="category" value="RPG"> RPG</li>
+            </ul>
+        </div>
+
+        <div class="filter">
+            <label>Développeur</label>
+            <ul>
+                <li><input type="checkbox" class="developer" value="Kojima"> Kojima</li>
+                <li><input type="checkbox" class="developer" value="Cory Barlog"> Cory Barlog</li>
+                <li><input type="checkbox" class="developer" value="Neil Druckmann"> Neil Druckmann</li>
+            </ul>
+        </div>
+        <button id="resetFilters" class="reset-btn">
+            Réinitialiser les filtres
+        </button>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <section class="content">
+        <h1>Liste des jeux</h1>
+
+        <div class="games">
+            <!-- Card Battelfield 1 -->
+            <div data-price="120"
+                 data-category="Action"
+                 data-developer="Kojima"
+                 class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                <div class="bg-white rounded-xl p-3">
+                    <img src="../src/assets/Games/Battelfield.jpg"
+                         class="w-full aspect-[416/200] object-cover rounded-lg"
+                         alt="Battelfield 1"/>
+                </div>
+                <h3 class="mt-4 text-xl font-bold">Battelfield 1</h3>
+                <p class="text-sm mb-4">Mode individuel</p>
+                <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                    Consulter
+                </button>
+            </div>
+
+            <!-- Card TombRaider -->
+            <div data-price="90"
+                 data-category="Aventure"
+                 data-developer="Cory Barlog"
+                 class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                <div class="bg-white rounded-xl p-3">
+                    <img src="../src/assets/Games/TombRaider.png"
+                         class="w-full aspect-[416/200] object-cover rounded-lg"
+                         alt="musique"/>
+                </div>
+                <h3 class="mt-4 text-xl font-bold">TombRaider</h3>
+                <p class="text-sm mb-4">Mode individuel</p>
+                <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                    Consulter
+                </button>
+            </div>
+
+            <!-- Card Minicraft -->
+            <div data-price="60"
+                 data-category="RPG"
+                 data-developer="Neil Druckmann"
+                 class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                <div class="bg-white rounded-xl p-3">
+                    <img src="../src/assets/Games/minicraft.png"
+                         class="w-full aspect-[416/200] object-cover rounded-lg"
+                         alt="musique"/>
+                </div>
+                <h3 class="mt-4 text-xl font-bold">Minicraft</h3>
+                <p class="text-sm mb-4">Mode multijoueur</p>
+                <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                    Consulter
+                </button>
+            </div>
+
+            <!-- Card NeedForSpeed -->
+            <div data-price="110"
+                 data-category="Action"
+                 data-developer="Kojima"
+                 class="activity-card bg-[#dce6b5] rounded-2xl p-4 flex flex-col">
+                <div class="bg-white rounded-xl p-3">
+                    <img src="../src/assets/Games/NeedForSpeed.jpg"
+                         class="w-full aspect-[416/200] object-cover rounded-lg"
+                         alt="musique"/>
+                </div>
+                <h3 class="mt-4 text-xl font-bold">Need For Speed</h3>
+                <p class="text-sm mb-4">Mode individuel</p>
+                <button class="mt-auto bg-green-300 px-4 py-2 rounded-full text-sm">
+                    Consulter
+                </button>
+            </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <span>1</span>
+            <span class="active">2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div>
+        <p>📍 Cité El Ghazela</p>
+        <p>📞 +216 23 45 65 47</p>
+        <p>✉ EspritZen@gmail.com</p>
+    </div>
+    <div>
+        <strong>À propos de nous</strong>
+        <p>StudyCare – Une équipe passionnée qui crée des solutions bien-être adaptées aux étudiants.</p>
+    </div>
+    <div class="newsletter">
+        <input type="email" placeholder="enter your address mail here">
+        <button>→</button>
+    </div>
+</footer>
+<script>
+    const priceFilter = document.getElementById("priceFilter");
+    const priceValue = document.getElementById("priceValue");
+    const categoryCheckboxes = document.querySelectorAll(".category");
+    const developerCheckboxes = document.querySelectorAll(".developer");
+    const cards = document.querySelectorAll(".activity-card");
+    const resetBtn = document.getElementById("resetFilters");
+
+    // Affichage prix en temps réel
+    priceValue.textContent = priceFilter.value;
+
+    priceFilter.addEventListener("input", () => {
+        priceValue.textContent = priceFilter.value;
+        filterGames();
+    });
+
+    function filterGames() {
+        const maxPrice = priceFilter.value;
+
+        const selectedCategories = [...categoryCheckboxes]
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+        const selectedDevelopers = [...developerCheckboxes]
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+        cards.forEach(card => {
+            const price = card.dataset.price;
+            const category = card.dataset.category;
+            const developer = card.dataset.developer;
+
+            const priceMatch = price <= maxPrice;
+            const categoryMatch =
+                selectedCategories.length === 0 || selectedCategories.includes(category);
+            const developerMatch =
+                selectedDevelopers.length === 0 || selectedDevelopers.includes(developer);
+
+            card.style.display =
+                priceMatch && categoryMatch && developerMatch ? "flex" : "none";
+        });
+    }
+
+    // Reset filtres
+    resetBtn.addEventListener("click", () => {
+        priceFilter.value = priceFilter.max;
+        priceValue.textContent = priceFilter.value;
+
+        categoryCheckboxes.forEach(cb => cb.checked = false);
+        developerCheckboxes.forEach(cb => cb.checked = false);
+
+        filterGames();
+    });
+
+    categoryCheckboxes.forEach(cb => cb.addEventListener("change", filterGames));
+    developerCheckboxes.forEach(cb => cb.addEventListener("change", filterGames));
+</script>
+
+
+</body>
+</html>
