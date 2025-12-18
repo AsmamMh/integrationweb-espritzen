@@ -1,13 +1,7 @@
 @use "./variables";
 @use "./mixins";
 @use "./layouts";
-@use 'components/suivisante';
-@use 'components/journal';
-@use 'components/feedback';
 
-@use "./components/componentsquestionnaire";
-@use "./components/suiviequestionnaire";
-@use "./components/componentsgraphe";
-@use "./components/componentsactivite";
-@use "./components/nosacrivitescomponents";
-
+@use "components/componentlist";
+@use "components/componentsettings";
+@use "components/componentinformation";

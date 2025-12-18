@@ -1,0 +1,159 @@
+@use "../variables";
+
+/* ================= PAGE CONTAINER ================= */
+.page {
+  width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5E6;
+}
+
+/* ================= HEADER ================= */
+.header {
+  width: 1440px;
+  height: 64px;
+  background-color: #E8F3EA;
+  margin: 0 auto;
+
+  .header-container {
+    height: 100%;
+    padding: 0 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      height: 32px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 105px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #4B5563;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #9DB37C;
+        }
+      }
+    }
+  }
+}
+
+/* ================= MAIN CHAT SETTINGS ================= */
+.chat-settings-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 72px;
+
+  .chat-settings-card {
+    width: 480px;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+    .avatar {
+      font-size: 48px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .settings-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .settings-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: #F3F4F6;
+        }
+
+        &.danger {
+          color: #DC2626;
+
+          &:hover {
+            background-color: #FEE2E2;
+          }
+        }
+
+        .icon {
+          font-size: 24px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  width: 1440px;
+  height: 120px;
+  background-color: #E8F3EA;
+  margin: 0 auto;
+
+  .footer-container {
+    height: 100%;
+    padding: 0 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    color: #4B5563;
+
+    .bold {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .mb-1 {
+      margin-bottom: 4px;
+    }
+
+    .newsletter {
+      display: flex;
+      justify-content: flex-end;
+
+      input {
+        flex: 1;
+        padding: 0 16px;
+        border-radius: 9999px 0 0 9999px;
+        border: 1px solid #D1D5DB;
+        outline: none;
+        font-size: 14px;
+      }
+
+      button {
+        padding: 0 16px;
+        background-color: #fff;
+        border: 1px solid #D1D5DB;
+        border-left: none;
+        border-radius: 0 9999px 9999px 0;
+        font-weight: bold;
+        color: #16A34A;
+        cursor: pointer;
+
+        &:hover {
+          color: #15803D;
+        }
+      }
+    }
+  }
+}
