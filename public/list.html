@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyCare – Chat</title>
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header-container">
+      <h2>Esprit Zen</h2>
+
+      <nav class="nav">
+        <a href="#">Accueil</a>
+        <a href="#">Activités</a>
+        <a href="#">Profil</a>
+        <a href="#">Communauté</a>
+        <a href="#">Conseils</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SEARCH ================= -->
+  <div class="search-bar">
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Demandez à l’IA ou recherchez"
+    />
+  </div>
+
+  <!-- ================= MAIN ================= -->
+  <main class="chat-container">
+
+    <!-- CONTACT LIST -->
+    <aside class="contacts">
+      <div class="contact active" data-user="Jhon">
+        <span class="status online"></span>
+        <span>Jhon</span>
+      </div>
+
+      <div class="contact" data-user="User2">
+        <span class="status busy"></span>
+        <span>User2</span>
+      </div>
+
+      <div class="contact" data-user="User3">
+        <span class="status offline"></span>
+        <span>User3</span>
+      </div>
+    </aside>
+
+    <!-- CHAT -->
+    <section class="chat">
+
+      <!-- CHAT HEADER -->
+      <div class="chat-header">
+        <div class="chat-user">
+          <span id="chatUser">User3</span>
+          <i class="fa-solid fa-circle-info info-icon"></i>
+        </div>
+
+        <div class="chat-icons">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- MESSAGES -->
+      <div class="messages">
+        <div class="message left">Bonjour, comment ça va ?</div>
+        <div class="message right">Ça va bien, merci !</div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <p class="bold">Cité El Ghazela</p>
+        <p>+216 23 45 65 47</p>
+        <p>EspritZen@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="bold">À propos de nous</p>
+        <p>
+          StudyCare – Une équipe passionnée qui crée des solutions bien-être.
+        </p>
+      </div>
+
+      <div class="newsletter">
+        <input type="email" placeholder="enter your adress mail here">
+        <button>→</button>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const contacts = document.querySelectorAll('.contact');
+const chatUser = document.getElementById('chatUser');
+const searchInput = document.getElementById('searchInput');
+
+contacts.forEach(contact => {
+  contact.addEventListener('click', () => {
+    contacts.forEach(c => c.classList.remove('active'));
+    contact.classList.add('active');
+    chatUser.textContent = contact.dataset.user;
+  });
+});
+
+searchInput.addEventListener('keyup', e => {
+  const value = e.target.value.toLowerCase();
+  contacts.forEach(contact => {
+    contact.style.display = contact.innerText.toLowerCase().includes(value)
+      ? 'flex'
+      : 'none';
+  });
+});
+</script>
+
+</body>
+</html>
