@@ -27,7 +27,10 @@ Capture d’écran :
   Interface location des espaces verts a proximité,
   Interface d'historique,
   📸 Capture d’écran :
-
+![activités](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-14%20202538.png)
+![track](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png)
+![location](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png)
+![history](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20220624.png)
   
 
 * Membre 3 :
