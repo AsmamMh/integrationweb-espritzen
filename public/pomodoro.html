@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Esprit Zen - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="app">
+
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/images/img_header_logo.png" alt="Esprit Zen">
+        </div>
+        <nav class="nav">
+            <a class="active">Accueil</a>
+            <a>Activités</a>
+            <a>Profil</a>
+            <a>Communauté</a>
+            <a>Conseils</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat">Séances d’aujourd’hui <span>2</span></div>
+            <div class="stat">Temps de concentration total <span>0 min</span></div>
+            <div class="stat">Série actuelle <span>3 jours</span></div>
+        </div>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <div class="soft">Pause longue<br><small>(15m)</small></div>
+            <div class="primary">Durée<br><small>(25m)</small></div>
+            <div class="soft">Pause courte<br><small>(5m)</small></div>
+        </div>
+
+        <!-- TIMER -->
+        <div class="timer-wrapper">
+            <div class="timer">
+                <div class="time">25:00 <span>+</span></div>
+                <p>Temps de mise au point</p>
+            </div>
+
+            <div class="timer-actions">
+                <button class="play">▶</button>
+                <button class="reset">⟳</button>
+            </div>
+        </div>
+
+        <!-- BOTTOM CARDS -->
+        <div class="bottom">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Paramètres</h3>
+                    <span>⚙</span>
+                </div>
+                <ul>
+                    <li>Auto-start breaks <span class="dot"></span></li>
+                    <li>Auto-start sessions <span class="dot"></span></li>
+                    <li>Notifications <span class="dot"></span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Progressions du jour</h3>
+                    <span>📈</span>
+                </div>
+                <ul class="progress">
+                    <li>• Session 1</li>
+                    <li>• Session 2</li>
+                    <li>• Session 3</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Alarmes</h3>
+                    <span>⏰</span>
+                </div>
+                <ul class="alarms">
+                    <li>10:00 <span>active</span></li>
+                    <li>12:00 <span>active</span></li>
+                    <li>16:00 <span>active</span></li>
+                </ul>
+                <div class="add">＋</div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- BOUTON RETOUR -->
+    <div class="back-button" onclick="history.back()">← Retour</div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contact">
+            <p>📍 Cité El Ghazella</p>
+            <p>📞 +216 23 45 65 47</p>
+            <p>✉ EspritZen@gmail.com</p>
+        </div>
+
+        <div class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button>➤</button>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

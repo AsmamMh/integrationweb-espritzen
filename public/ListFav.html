@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esprit Zen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+    <div class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">
+                <img src="../assets/images/img_header_logo.png" alt="Esprit Zen">
+            </div>
+            <nav class="nav">
+                <a class="active">Accueil</a>
+                <a>Activités</a>
+                <a>Profil</a>
+                <a>Communauté</a>
+                <a>Conseils</a>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <h3>🎵 Ma musique</h3>
+                <div class="search">
+                    <input type="text" placeholder="Entrer un titre, un URL...">
+                </div>
+                <ul class="menu">
+                    <li class="active">🏠 Accueil</li>
+                    <li>➕ Ajouter une playlist</li>
+                    <li>❤️ Favoris</li>
+
+                </ul>
+            </aside>
+
+            <!-- CONTENT -->
+            <section class="content">
+                <!-- PLAYLISTS -->
+                <h3>📂 Playlists favoris</h3>
+                <div class="playlists">
+                    <div class="card">
+                        <img src="../assets/images/img_image_32.png">
+                        <p class="title">Musique relaxante</p>
+                        <span>Paysages sonores</span>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/images/img_image_31.png">
+                        <p class="title">Musique Zen</p>
+                        <span>Paysages sonores</span>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/images/img_image_30.png">
+                        <p class="title">Sommeil & détente</p>
+                        <span>Paysages sonores</span>
+                    </div>
+                </div>
+
+                <!-- TRACKS -->
+                <h3>🎶 Morceaux</h3>
+                <div class="tracks">
+                    <div class="track" data-src="player.html"><button>▶</button><span>Piano apaisant</span><small>03:56</small></div>
+                    <div class="track" data-src="player.html"><button>▶</button><span>Musique Zen</span><small>03:56</small></div>
+                    <div class="track" data-src="player.html"><button>▶</button><span>Sommeil & détente</span><small>03:56</small></div>
+
+                </div>
+
+
+            </section>
+        </main>
+
+        <!-- BOUTON RETOUR -->
+        <div class="back-button" onclick="history.back()">← Retour</div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                <p>📍 Cité El Ghazela</p>
+                <p>📞 +216 23 45 65 47</p>
+                <p>✉ EspritZen@gmail.com</p>
+            </div>
+            <div>
+                <strong>À propos de nous</strong>
+                <p>StudyCare – Une équipe passionnée qui crée des solutions bien-être adaptées aux étudiants.</p>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="enter your address mail here">
+                <button>→</button>
+            </div>
+        </footer>
+
+    </div>
+</div>
+<script>
+    const tracks = document.querySelectorAll('.track');
+
+    tracks.forEach(track => {
+        track.addEventListener('click', () => {
+            // retirer la classe active de tous
+            tracks.forEach(t => t.classList.remove('active'));
+
+            // ajouter la classe active au morceau cliqué
+            track.classList.add('active');
+
+            // redirection vers la page du player
+            const page = track.getAttribute('data-src');
+            if (page) window.location.href = page;
+        });
+    });
+</script>
+
+</body>
+</html>
