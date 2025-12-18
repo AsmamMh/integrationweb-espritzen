@@ -21,7 +21,7 @@ Capture d’écran :
 
 
 * Membre 2 :
-  📄 Page réalisée : 
+  📄 Page réalisée :
   📸 Capture d’écran :
 
   
