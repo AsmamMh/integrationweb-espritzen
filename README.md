@@ -20,10 +20,17 @@ Capture d’écran :
 <img width="1176" height="921" alt="graphe de stress" src="https://github.com/user-attachments/assets/bfca27e4-aed5-4977-918c-84daaf3517d4" />
 
 
-* Membre 2 :
-  📄 Page réalisée : 
-  📸 Capture d’écran :
-
+* Membre 2 : Bel hadj ali Taieb amine
+  📄 Page réalisée :
+  Interface liste des activités,
+  Interface  de track (KM,Steps,Water,Kcal),
+  Interface location des espaces verts a proximité,
+  Interface d'historique,
+  Capture d’écran :
+![activités](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-14%20202538.png)
+![track](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png)
+![location](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png)
+![history](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20220624.png)
   
 
 * Membre 3 :
