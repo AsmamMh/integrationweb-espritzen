@@ -33,9 +33,21 @@ Capture d’écran :
 ![history](https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20220624.png)
   
 
-* Membre 3 :
-  📄 Page réalisée : 
-  📸 Capture d’écran :
+* Membre 3 : Bechir Mnissi  
+  📄 Pages réalisées :  
+  - Interface Journal  
+  - Interface Feedback  
+  - Interface Suivi Santé  
+
+  📸 Captures d’écran :
+
+  ![Interface Journal](https://github.com/user-attachments/assets/edb6b925-cec9-4b28-a4d2-fb3c4a6265a8)
+
+  ![Interface Feedback](https://github.com/user-attachments/assets/aa807701-ec7d-492c-aea9-8578362536b3)
+
+  ![Interface Suivi Santé](https://github.com/user-attachments/assets/71e3cdcf-70ee-421c-8e0c-62676e62c9cb)
+
+
 
 *Nom de l’application :EspritZen
 Description :Esprit Zen est une application web destinée aux étudiants en droit allocataires, visant à contribuer à la réduction du stress académique à travers une approche numérique basée sur l’évaluation,
