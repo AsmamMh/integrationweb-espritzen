@@ -47,7 +47,15 @@ Capture d’écran :
 
   ![Interface Suivi Santé](https://github.com/user-attachments/assets/71e3cdcf-70ee-421c-8e0c-62676e62c9cb)
 
-
+* Membre 4 : hamzaoui mouadh
+  📄 Page réalisée :
+  Interface acceuil BienEtre,
+  Interface  ChatBot,
+  Interface des jeux,
+  Capture d’écran :
+![ acceuil BienEtre]([https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-14%20202538.png])
+![ChatBot]([https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png](https://github.com/AsmamMh/integrationweb-espritzen/blob/7704973b4cf3b1f682deff223ca8892cd6e25990/8e4e44d7-0418-45db-a3a1-a5d61eef6a9e.jfif))
+![jeux]([https://github.com/AsmamMh/integrationweb-EspritZen/blob/814022f37c95a15cee21306170bf5d912822ad86/Capture%20d'%C3%A9cran%202025-12-16%20185754.png](https://github.com/AsmamMh/integrationweb-espritzen/blob/7704973b4cf3b1f682deff223ca8892cd6e25990/f5e84f94-5825-4a70-9d2c-563d712212ad.jfif))
 
 *Nom de l’application :EspritZen
 Description :Esprit Zen est une application web destinée aux étudiants en droit allocataires, visant à contribuer à la réduction du stress académique à travers une approche numérique basée sur l’évaluation,
